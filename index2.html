@@ -98,9 +98,60 @@
             </div>
           </li>
         </ul>
+
+        <h1>TOASTS</h1>
+        <a class="btn" onclick="Materialize.toast('Post Saved', 4000)">Save Post</a>
+        <a class="btn red" onclick="Materialize.toast('Post sent', 4000, 'rounded')">Send Post</a>
+
+        <h1>TOOLTIPS</h1>
+        <a href="" class="btn tooltipped" data-position="top" data-tooltip="I am top tooltip">Hover me</a>
+        <a href="" class="btn tooltipped" data-position="bottom" data-tooltip="I am bottom tooltip" data-delay="2000">Hover me</a>
+        <a href="" class="btn tooltipped" data-position="left" data-tooltip="I am left tooltip">Hover me</a>
+        <a href="" class="btn tooltipped" data-position="right" data-tooltip="I am right tooltip" data-delay="1000">Hover me</a>
+
+        <h1>DROPDOWNS</h1>
+        <!-- Dropdown Trigger -->
+        <a class='dropdown-button btn' href='#' data-activates='dropdown1'>Drop Me!</a>
+
+        <!-- Dropdown Structure -->
+        <ul id='dropdown1' class='dropdown-content'>
+          <li><a href="#!">one</a></li>
+          <li><a href="#!">two</a></li>
+          <li class="divider"></li>
+          <li><a href="#!">three</a></li>
+          <li><a href="#!"><i class="material-icons">view_module</i>four</a></li>
+          <li><a href="#!"><i class="material-icons">cloud</i>five</a></li>
+        </ul>
+
+        <h1>MATERIAL BOXED</h1>
+        <<img src="http://materializecss.com/images/sample-1.jpg" alt="" class="materialboxed" data-caption="Beautiful nature">
+
+        <h1>SLIDER</h1>
+        <div class="slider">
+          <ul class="slides">
+            <li><img src="http://lorempixel.com/580/250/nature/8" alt="">
+              <div class="caption center-align">
+                <h3>This is out tagline</h3>
+                <h5 class="light grey-text.text-lighten-3">Here is out slogan</h5>
+              </div>
+            </li>
+            <li><img src="http://lorempixel.com/580/250/nature/7" alt="">
+              <div class="caption left-align">
+                <h3>This is out tagline</h3>
+                <h5 class="light grey-text.text-lighten-3">Here is out slogan</h5>
+              </div>
+            </li>
+            <li><img src="http://lorempixel.com/580/250/nature/10" alt="">
+              <div class="caption right-align">
+                <h3>This is out tagline</h3>
+                <h5 class="light grey-text.text-lighten-3">Here is out slogan</h5>
+              </div>
+            </li>
+          </ul>
+        </div>
       </div><!--container end-->
 
-      <div style="height:50px"></div>
+      <div style="height:100px"></div>
       <!--Import jQuery before materialize.js-->
       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
@@ -109,6 +160,9 @@
           //CAROUSEL
           $('.carousel').carousel();
           $('.carousel.carousel-slider').carousel({fullWidth:true});
+          //Fire off Toast
+          //Materialize.toast('Hi!', 3000);
+          $('.slider').slider();
         });
       </script>
     </body>
