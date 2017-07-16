@@ -149,6 +149,91 @@
             </li>
           </ul>
         </div>
+
+        <h1>MODALS</h1>
+        <a class="waves-effect waves-light btn" href="#modal1">Modal 1</a>
+        <a class="waves-effect waves-light btn blue" href="#modal2">Modal 2</a>
+
+        <!-- Modal Structure -->
+        <div id="modal1" class="modal">
+          <div class="modal-content">
+            <h4>Modal Header</h4>
+            <p>A bunch of text</p>
+          </div>
+          <div class="modal-footer">
+            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+          </div>
+        </div>
+
+        <div id="modal2" class="modal">
+          <div class="modal-content">
+            <h4>Modal 2 Header</h4>
+            <p>A bunch of text</p>
+          </div>
+          <div class="modal-footer">
+            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+          </div>
+        </div>
+
+        <h1>SIDENAV</h1>
+        <ul id="slide-out" class="side-nav">
+         <li>
+           <div class="user-view">
+             <div class="background">
+               <img src="http://materializecss.com/images/office.jpg">
+             </div>
+             <a href="#!user"><img class="circle" src="http://materializecss.com/images/yuna.jpg"></a>
+             <a href="#!name"><span class="white-text name">John Doe</span></a>
+             <a href="#!email"><span class="white-text email">jdandturk@gmail.com</span></a>
+           </div>
+         </li>
+         <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
+         <li><a href="#!">Second Link</a></li>
+         <li><div class="divider"></div></li>
+         <li><a class="subheader">Subheader</a></li>
+         <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+       </ul>
+       <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+
+        <h1>TABS</h1>
+        <div class="row">
+          <div class="col s12">
+            <ul class="tabs">
+              <li class="tab col s3"><a href="#test1">Test 1</a></li>
+              <li class="tab col s3"><a href="#test2">Test 2</a></li>
+              <li class="tab col s3"><a href="#test3">Test 3</a></li>
+              <li class="tab col s3"><a href="#test4">Test 4</a></li>
+            </ul>
+          </div>
+              <div id="test1" class="col s12">Test 1</div>
+              <div id="test2" class="col s12">Test 2</div>
+              <div id="test3" class="col s12">Test 3</div>
+              <div id="test4" class="col s12">Test 4</div>
+          </div>
+
+          <h1>SLIDABLE TABS</h1>
+          <ul id="tabs-swipe-demo" class="tabs">
+            <li class="tab col s3"><a href="#test-swipe-1">Test 1</a></li>
+            <li class="tab col s3"><a class="active" href="#test-swipe-2">Test 2</a></li>
+            <li class="tab col s3"><a href="#test-swipe-3">Test 3</a></li>
+          </ul>
+          <div id="test-swipe-1" class="col s12 blue">Test 1</div>
+          <div id="test-swipe-2" class="col s12 red">Test 2</div>
+          <div id="test-swipe-3" class="col s12 green">Test 3</div>
+
+          <h1>TAP TARGET</h1>
+
+          <!--TAP TARGET TRIGGER-->
+          <div class="fixed-action-btn" style="bottom:45px;right:24px">
+            <a id="menu" onclick="$('.tap-target').tapTarget('open')" class="waves-effect waves-light btn btn-floating" ><i class="material-icons">menu</i></a>
+          </div>
+          <!-- Tap Target CONTENT -->
+          <div class="tap-target cyan" data-activates="menu">
+            <div class="tap-target-content white-text">
+              <h5>Title</h5>
+              <p>A bunch of text</p>
+            </div>
+          </div>
       </div><!--container end-->
 
       <div style="height:100px"></div>
@@ -163,6 +248,9 @@
           //Fire off Toast
           //Materialize.toast('Hi!', 3000);
           $('.slider').slider();
+          $('.modal').modal();
+          $(".button-collapse").sideNav();
+
         });
       </script>
     </body>
